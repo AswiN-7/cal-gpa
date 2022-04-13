@@ -27,3 +27,96 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+const gpaCal = document.getElementById('calGpa')
+const res = document.getElementById('res');
+
+
+function calculateGpa() {
+    totalCredit = 0;
+    gp = 0;
+    // alert("clicked");
+    subjects.forEach(element => {
+        // get Actual grade and add to the dictionary
+
+        id = element.id
+        const sub = document.getElementById(id);
+        // console.log(sub);
+        selectedOption = sub.options[sub.selectedIndex];
+        // console.log(selectedOption);
+        selectedValue = selectedOption.value;
+        gradePoints = parseInt(selectedValue);
+        element['grdPnt'] = gradePoints;
+        
+        // cal total
+        totalCredit+=element.credit;
+        
+        // cal gpa
+        gp += gradePoints*element.credit;
+        
+    });
+    gpa = gp/totalCredit;
+
+    res.innerHTML = "GPA : " + gpa;
+
+    // console.log(subjects);
+
+  }
+
+
+gpaCal.addEventListener("click", calculateGpa);
+
+
+subjects = [{
+    id : "sub1",
+    sub : "UCS1701",
+    credit : 3
+}, 
+{
+    id : "sub2",
+    sub : "UCS1702",
+    credit : 3
+}, 
+{
+    id : "sub3",
+    sub : "UCS1703",
+    credit : 3
+},
+{
+    id : "sub4",
+    sub : "UCS1704",
+    credit : 3
+},
+{
+    id : "sub5",
+    sub : "PE1",
+    credit : 3
+},
+{
+    id : "sub6",
+    sub : "PE2",
+    credit : 3
+}, 
+{
+    id : "sub7",
+    sub : "UCS1711",
+    credit : 1.5
+},
+{
+    id : "sub8",
+    sub : "UCS1712",
+    credit : 1.5
+}] 
+
+arr_subs= ['sub1', 'sub2', 'sub3', 'sub4', 'sub5', 'sub6', 'sub7', 'sub8']
+// arr_capture = []
+
+
+// const sub1 = document.getElementById('sub1')
+// console.log(arr_capture);
+
+// const text = arr_capture[0].options[1].text;
+// console.log(text)
+
+console.log(subjects);

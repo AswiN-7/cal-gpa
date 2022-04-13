@@ -164,7 +164,7 @@ image{
 /*==================== items ====================*/
 .items{
     padding: .5rem;
-    width: 500px;
+    width: 400px;
     display: flex;
     flex-direction: row ;
     align-items: center;
