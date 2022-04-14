@@ -30,12 +30,114 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*
+B.E. Electrical And Electronics Engineering
+B.E. Electronics And Communication Engineering
+B.E. Computer Science And Engineering
+B.Tech. Information Technology
+B.E. Mechanical Engineering
+B.Tech. Chemical Engineering
+B.E. Bio-Medical Engineering
+B.E. Civil Engineering
+PG Programs
 
+*/
 // all infos
 Information = {
     "UG": {
-        "EEE": {},
-        "ECE": {},
+        "BME": {
+            "course": "B.E. Bio-Medical Engineering",
+            "sem1" : {
+                "theory":[], 
+                "practicals":[]
+            },
+            "sem2" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem3" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem4" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem5" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem7" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem8" : {
+                "theory":[], 
+                "practicals":[]
+            }
+        },
+        "EEE": {
+            "course": "B.E. Electrical And Electronics Engineering",
+            "sem1" : {
+                "theory":[], 
+                "practicals":[]
+            },
+            "sem2" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem3" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem4" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem5" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem7" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem8" : {
+                "theory":[], 
+                "practicals":[]
+            }
+        },
+        "ECE": {
+            "course": "B.E. Electronics And Communication Engineering",
+            "sem1" : {
+                "theory":[], 
+                "practicals":[]
+            },
+            "sem2" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem3" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem4" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem5" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem7" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem8" : {
+                "theory":[], 
+                "practicals":[]
+            }
+        },
         "CSE": {
             "course": "B.E. COMPUTER SCIENCE AND ENGINEERING",
             "sem1": {
@@ -264,7 +366,7 @@ Information = {
                       },
                       {
                         "S.No": "4.",
-                        "COURSE CODE": "",
+                        "COURSE CODE": "OOP",
                         "COURSE TITLE": "Object Oriented Programming",
                         "CATEGORY": "PC",
                         "CONTACT PERIODS": 3,
@@ -275,7 +377,7 @@ Information = {
                       },
                       {
                         "S.No": "5.",
-                        "COURSE CODE": "",
+                        "COURSE CODE": "USP",
                         "COURSE TITLE": "UNIX and Shell Programming",
                         "CATEGORY": "PC",
                         "CONTACT PERIODS": 4,
@@ -341,8 +443,98 @@ Information = {
                 "practicals":[]
             }, 
             "sem7" : {
-                "theory":[], 
-                "practicals":[]
+                "theory":[
+                    {
+                        "S.No": "1.",
+                        "COURSE CODE": "UCS1701",
+                        "COURSE TITLE": "Distributed Systems",
+                        "CATEGORY": "PC",
+                        "CONTACT PERIODS": 3,
+                        "L": 3,
+                        "T": 0,
+                        "P": 0,
+                        "C": 3
+                      },
+                      {
+                        "S.No": "2.",
+                        "COURSE CODE": "UCS1702",
+                        "COURSE TITLE": "Mobile Computing",
+                        "CATEGORY": "PC",
+                        "CONTACT PERIODS": 3,
+                        "L": 3,
+                        "T": 0,
+                        "P": 0,
+                        "C": 3
+                      },
+                      {
+                        "S.No": "3.",
+                        "COURSE CODE": "UCS1703",
+                        "COURSE TITLE": "Computer Graphics and Multimedia",
+                        "CATEGORY": "PC",
+                        "CONTACT PERIODS": 3,
+                        "L": 3,
+                        "T": 0,
+                        "P": 0,
+                        "C": 3
+                      },
+                      {
+                        "S.No": "4.",
+                        "COURSE CODE": "UCS1704",
+                        "COURSE TITLE": "Management and Ethical Practices",
+                        "CATEGORY": "HS",
+                        "CONTACT PERIODS": 3,
+                        "L": 3,
+                        "T": 0,
+                        "P": 0,
+                        "C": 3
+                      },
+                      {
+                        "S.No": "5.",
+                        "COURSE CODE": "PE3",
+                        "COURSE TITLE": "Professional Elective 3",
+                        "CATEGORY": "PE",
+                        "CONTACT PERIODS": 3,
+                        "L": 3,
+                        "T": 0,
+                        "P": 0,
+                        "C": 3
+                      },
+                      {
+                        "S.No": "6.",
+                        "COURSE CODE": "PE4",
+                        "COURSE TITLE": "Professional Elective 4",
+                        "CATEGORY": "PE",
+                        "CONTACT PERIODS": 3,
+                        "L": 3,
+                        "T": 0,
+                        "P": 0,
+                        "C": 3
+                      },
+                ], 
+                "practicals":[
+                    {
+                        "S.No": "7.",
+                        "COURSE CODE": "UCS1711",
+                        "COURSE TITLE": "Mobile Application Development Lab",
+                        "CATEGORY": "PC",
+                        "CONTACT PERIODS": 3,
+                        "L": 0,
+                        "T": 0,
+                        "P": 3,
+                        "C": 1.5
+                      },
+                      {
+                        "S.No": "8.",
+                        "COURSE CODE": "UCS1712",
+                        "COURSE TITLE": "Graphics and Multimedia Lab",
+                        "CATEGORY": "PC",
+                        "CONTACT PERIODS": 3,
+                        "L": 0,
+                        "T": 0,
+                        "P": 3,
+                        "C": 1.5
+                      }
+                ]
             }, 
             "sem8" : {
                 "theory":[], 
@@ -350,7 +542,7 @@ Information = {
             } 
         },
         "IT": {
-            "course": "B.E. COMPUTER SCIENCE AND ENGINEERING",
+            "course": "B.Tech. Information Technology",
             "sem1" : {
                 "theory":[], 
                 "practicals":[]
@@ -380,10 +572,99 @@ Information = {
                 "practicals":[]
             }
         },
-        "ME": {},
-        "CHE": {},
-        "BME": {},
-        "CE": {}
+        "ME": {
+            "course": "B.E. Mechanical Engineering",
+            "sem1" : {
+                "theory":[], 
+                "practicals":[]
+            },
+            "sem2" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem3" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem4" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem5" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem7" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem8" : {
+                "theory":[], 
+                "practicals":[]
+            }
+        },
+        "CHEM": {
+            "course": "B.Tech. Chemical Engineering",
+            "sem1" : {
+                "theory":[], 
+                "practicals":[]
+            },
+            "sem2" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem3" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem4" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem5" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem7" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem8" : {
+                "theory":[], 
+                "practicals":[]
+            }
+        },     
+        "CIVIL": {
+            "course": "B.E. Civil Engineering",
+            "sem1" : {
+                "theory":[], 
+                "practicals":[]
+            },
+            "sem2" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem3" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem4" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem5" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem7" : {
+                "theory":[], 
+                "practicals":[]
+            }, 
+            "sem8" : {
+                "theory":[], 
+                "practicals":[]
+            }
+        }
     },
     "PG": {
         "COMM": {},
@@ -589,7 +870,11 @@ function createSubjectSection(){
     console.log(subjects)
     let p = document.createElement('p');
     p.textContent = "data yet to be collected";
+    p.classList.add('flag')
 
+    if (subjects.length === 0){
+        div.append(p)
+    }
     // if (dictIsEmpty(subjects)){
     //     div.append(p)
     // }
